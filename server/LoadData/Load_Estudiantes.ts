@@ -1,6 +1,6 @@
 import * as fs from "fs";
 import csv = require("csv-parser");
-import User from "../models/User";
+import { Estudiante } from "../src/models/Usuario";
 import mongoose from "mongoose";
 
 const connectionString =
@@ -27,11 +27,10 @@ fs.createReadStream("C:/Users/joen_/Downloads/lista.csv", {
 
     // Insertar los datos en la base de datos
     for (const result of results) {
-      const user = new User({
+      const user = new Estudiante({
+        codigo: result.codigo,
         nombre: result.nombre,
         email: `${result.codigo}@unsaac.edu.pe`,
-        rol: "estudiante",
-        password: "passwordTemporal", // Reemplaza esto con una contraseña temporal segura
       });
 
       try {

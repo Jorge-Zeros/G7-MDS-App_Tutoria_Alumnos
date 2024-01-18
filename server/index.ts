@@ -2,9 +2,12 @@ import express from "express";
 import cors from "cors";
 import "./loadEnvironment.js";
 // index.ts o app.ts
-import "./db/connection";
+import "./src/db/connection";
 // cargar rutas
-import userRoutes from "./routes/users";
+import userRoutes from "./src/routes/Rutas_Usuario";
+import estudianteRoutes from "./src/routes/Rutas_Estudiante";
+import tutorRoutes from "./src/routes/Rutas_Tutor";
+import directorRoutes from "./src/routes/Rutas_Director";
 // Cargar usuarios
 
 const PORT = process.env.PORT || 3600;
@@ -20,7 +23,10 @@ app.use(cors(corsOptions));
 app.use(express.json());
 
 // Load the routes
-app.use("/users", userRoutes);
+app.use("/usuarios", userRoutes);
+app.use("/estudiantes", estudianteRoutes);
+app.use("/tutores", tutorRoutes);
+app.use("/directores", directorRoutes);
 
 // Middleware para manejar errores 404 (Recurso no encontrado)
 app.use((req, res, next) => {

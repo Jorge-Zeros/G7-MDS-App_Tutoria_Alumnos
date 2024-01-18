@@ -38,7 +38,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 exports.__esModule = true;
 var fs = require("fs");
 var csv = require("csv-parser");
-var User_1 = require("../models/User");
+var Usuario_1 = require("../src/models/Usuario");
 var mongoose_1 = require("mongoose");
 var connectionString = "mongodb+srv://161534:UftqIrKUiv81MecS@cluster0.aevwbq5.mongodb.net/tutorias_db?retryWrites=true&w=majority" ||
     "";
@@ -65,10 +65,9 @@ fs.createReadStream("C:/Users/joen_/Downloads/lista.csv", {
             case 1:
                 if (!(_i < results_1.length)) return [3 /*break*/, 6];
                 result = results_1[_i];
-                user = new User_1["default"]({
+                user = new Usuario_1.Usuario({
                     nombre: result.nombre,
                     email: "".concat(result.codigo, "@unsaac.edu.pe"),
-                    rol: "estudiante",
                     password: "passwordTemporal"
                 });
                 _a.label = 2;
