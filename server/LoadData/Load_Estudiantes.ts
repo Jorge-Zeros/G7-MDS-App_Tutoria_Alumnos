@@ -4,7 +4,7 @@ import { Estudiante } from "../src/models/Usuario";
 import mongoose from "mongoose";
 
 const connectionString =
-  "mongodb+srv://161534:UftqIrKUiv81MecS@cluster0.aevwbq5.mongodb.net/tutorias_db?retryWrites=true&w=majority" ||
+  "Aqui va el enlace de coneccion con el mongodb Atlas" ||
   "";
 console.log(connectionString);
 mongoose
