@@ -40,7 +40,7 @@ var fs = require("fs");
 var csv = require("csv-parser");
 var Usuario_1 = require("../src/models/Usuario");
 var mongoose_1 = require("mongoose");
-var connectionString = "mongodb+srv://161534:UftqIrKUiv81MecS@cluster0.aevwbq5.mongodb.net/tutorias_db?retryWrites=true&w=majority" ||
+var connectionString = "Aqui va el enlace de coneccion con el mongodb Atlas" ||
     "";
 console.log(connectionString);
 mongoose_1["default"]
