@@ -4,11 +4,7 @@ la web del repositorio es https://github.com/Jorge-Zeros/G7-MDS-App_Tutoria_Alum
 
 # G7-MDS-App_Tutoria_Alumnos
 
-## ¿Cómo clonar un repositorio?
-
 Para clonar un repositorio, primero hay que copiar la URL del repositorio. Para ello, hay que ir al repositorio en GitHub y pulsar en el botón verde que pone "Code". Se abrirá un desplegable y hay que pulsar en el botón que pone "HTTPS". Se copia la URL que aparece en el desplegable.
-
-Una vez copiada la URL, hay que abrir la terminal y situarse en la carpeta donde se quiera clonar el repositorio. Una vez situado en la carpeta, hay que ejecutar el siguiente comando:
 
 ```bash
 
